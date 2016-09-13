@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FunDev</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sample">Trong ngày này, hầu hết các website trong hệ thống của Gamma Entertainment (lên đến trên 50 premium websites) sẽ mở cửa free, hoặc sale cháy máy cho phép người dùng xem và tải các dữ liệu như Premium Member. Ngày 8/9/2016, khởi đầu của sự kiện này</string>
+</resources>

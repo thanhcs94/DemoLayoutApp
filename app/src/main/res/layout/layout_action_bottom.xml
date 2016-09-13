@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#ffffff"
+        android:layout_marginTop="16dp"
+        card_view:cardCornerRadius="4dp">>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#ffffff"
+        android:paddingTop="4dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/llFollower">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="30dp"
+               android:src="@drawable/ic_like_green"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/tvNumFollower" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="13sp"
+                    android:text="Thích"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/llFollowing">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_ratingbar"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:adjustViewBounds="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:backgroundTint="#ffd900"
+                android:id="@+id/tvNumFollowing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:text="Đánh giá"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000000"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ll_UserMore">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_comment"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="13sp"
+                android:text="21 bình luận"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#000000"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
